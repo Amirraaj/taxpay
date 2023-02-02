@@ -43,18 +43,66 @@
         </ul>
       </nav>
       <div class="btn-holder">
-        <div class="main-button">
-          <div class="scroll-to-section"><a href="#">Login</a></div>
-        </div>
-        <div class="main-button">
-          <div class="scroll-to-section"><a href="#">Sign In</a></div>
-        </div>
+        <ul class="main-menu">
+          <li class="has-submenu">
+            <a href="#">
+              <img
+                class="rounded-circle"
+                style="width: 35px; margin-right: 10px"
+                alt="avatar1"
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
+              />
+              Naina</a
+            >
+            <ul class="sub-menu">
+              <li><a href="/pages/Calculator.html">Profile</a></li>
+              <li><a href="#">KYC Form</a></li>
+              <li><a href="#">KYC Form</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </header>
-    
 
-
-
+    <section class="section contact min-width" data-section="section6">
+      <div class="container">
+        <div class="margin-50">
+          <div class="cont-profile ">
+            <div class="profile-image ">
+              <img
+                class="rounded-circle"
+                alt="avatar1"
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
+              />
+              <div class="verified-btn">
+                <img
+                  class="rounded-circle"
+                  style="width: 35px; margin-right: 10px"
+                  alt="avatar1"
+                  src="assets/images/Checkmark-green-tick-isolated-on-transparent-background-PNG.png"
+                />
+              </div>
+            </div>
+            <div class="profile-container">
+              <div class="title-kyc font-h1">General Information</div>
+              <div class="text-left">
+               <Span>Name : Naina Thapa</Span>
+              </div>
+              <div class="text-left">
+               <Span>Address : Naina Thapa</Span>
+              </div>
+              <div class="text-left">
+               <Span>Email : Naina Thapa</Span>
+              </div>
+              <div class="text-left">
+               <Span>Phone Number  : Naina Thapa</Span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="container">
@@ -65,7 +113,7 @@
         </div>
       </div>
     </footer>
-   <!-- Scripts -->
+    <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -77,60 +125,6 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".nav li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos,
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function () {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu, .scroll-to-section").on("click", "a", function (e) {
-        if ($(e.target).hasClass("external")) {
-          return;
-        }
-        e.preventDefault();
-        $("#menu").removeClass("active");
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function () {
-        checkSection();
-      });
-    </script>
+    <script></script>
   </body>
 </html>
-

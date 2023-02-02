@@ -30,9 +30,30 @@
     height: 100px;
     margin-top: 30px;
     padding: 20px 12px ;
+   
+}
+.profile-container{
+    width: 100%;
+    background-color: #414B5C;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 100px;
+    color: #fff;
+    display: flex;   
+    flex-direction: column;
+    gap:30px;
+    height: 100%;
+}
+.text-center{
+    text-align: center;
 }
 .sub-title{
     color: #fff !important;
+}
+.container-profile{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .proceed-payment{
     color: #fff;
@@ -42,6 +63,30 @@
     margin-top: 30px;
     font-family: 600;
 }
+.profile-image{
+   
+    position: relative;
+}
+
+.cont-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap:50px
+}
+.font-h1{
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+    margin-top: 0px !important;
+    font-weight: 500 !important;
+}
+
+.verified-btn{
+    position: absolute;
+    bottom: -11px;
+    left: 44%;
+}
+
 .file-selector{
     color: #fff;
     background-color: #414B5C;
@@ -81,4 +126,8 @@
     display: flex;
     margin-top: 30px!important;
     
+}
+.margin-50{
+    height: 100vh;
+    padding-top: 200px;
 }
