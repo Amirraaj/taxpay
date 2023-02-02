@@ -128,6 +128,13 @@
     
 }
 .margin-50{
-    height: 100vh;
     padding-top: 200px;
+}
+.kyc-data{
+    background-color: #414B5C;
+    margin-top: 50px;
+    padding: 30px;
+}
+.mt-51{
+    margin-top: 40px !important;
 }
